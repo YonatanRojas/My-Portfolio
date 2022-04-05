@@ -1,0 +1,82 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ %size {
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+
+    background-image: url("./IMG/Componentes-Hardware.jpg");
+    @extend  %size;
+    animation: Movimiento 10s Infinite linear alternate;
+}
+.title{
+    text-align: center;
+    text-decoration: solid;
+    padding: 150px;
+    color: #fff;
+    font-weight: 600;
+
+    transition-duration: 1s;
+}
+
+.title:hover{
+    color: rgb(0, 187, 255);
+    font-weight: 900;
+}
+
+@keyframes Movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.container-2{
+    width: 100%;
+    height: 400px;
+    
+    background-image: url("./IMG/Mundo-tecnologico.jpg");
+    @extend %size;
+    animation: Movimiento 7s infinite linear alternate;
+}
+.container-3{
+    width: 100%;
+    height: 400px;
+    
+    background-image: url("./IMG/Ciudad1.jpg");
+    @extend %size;
+    animation: Movimiento 10s infinite linear alternate;
+}
+
+.title2{
+    color: rgb(255, 255, 255);
+    padding: 100px 0px 0px 10px;
+    font-weight: bold;
+}
+.text{
+    padding: 40px 10px 10px 10px;
+    text-decoration: solid;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 800;
+}
+.Info-Project{
+    padding: 10px 0px 0px 30px;
+}
+.button{
+    border-radius: 10px;
+    color: black;
+
+    background: linear-gradient(45deg,red,rgb(41, 39, 41),rgb(205, 205, 46),green,black);
+    background-size: 400% 400%;
+}

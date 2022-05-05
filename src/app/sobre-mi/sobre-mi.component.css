@@ -1,0 +1,83 @@
+/*
+$color{
+  "blanco":"#fff"
+}*/
+.container {
+  width: 100%;
+  height: 1300px;
+  border-radius: 20px;
+  background-color: #fff;
+  /*  background: linear-gradient(blue, green, red);*/
+  -webkit-box-shadow: 0px 0px 5px 9px rgba(255, 255, 255, 0.598);
+          box-shadow: 0px 0px 5px 9px rgba(255, 255, 255, 0.598);
+}
+
+.container .foto {
+  margin: 50px 30px auto;
+  padding: 0px;
+  width: 350px;
+  height: 520px;
+  background-image: url("IMG/Foto-profesional.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+}
+
+.container .informacion {
+  margin: -390px 560px auto;
+  padding: 50px;
+  width: 500px;
+  height: 540px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(223, 220, 220, 0.911)), to(rgba(194, 191, 191, 0.938)));
+  background: linear-gradient(rgba(223, 220, 220, 0.911), rgba(194, 191, 191, 0.938));
+}
+
+.container .habilidades {
+  margin: -100px 40px auto;
+  padding: 0px;
+  width: 500px;
+  height: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 214, 214, 0.877)), to(rgba(230, 227, 227, 0.897)));
+  background: linear-gradient(rgba(218, 214, 214, 0.877), rgba(230, 227, 227, 0.897));
+}
+
+.container .certificados {
+  margin: 100px 0px auto;
+  padding: 0px;
+  width: 100%;
+  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(214, 212, 212, 0.918)), to(rgba(204, 200, 200, 0.911)));
+  background: linear-gradient(rgba(214, 212, 212, 0.918), rgba(204, 200, 200, 0.911));
+}
+
+.titulo {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 1690px;
+  }
+  .container .foto {
+    margin: 0 0 0 60px;
+    padding: 0;
+  }
+  .container .informacion {
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .container .habilidades {
+    margin: 10px 0px 10px 0px;
+    padding: 0;
+    width: 100%;
+  }
+  .container .certificados {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=sobre-mi.component.css.map */

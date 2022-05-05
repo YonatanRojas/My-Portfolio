@@ -1,0 +1,114 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container, .container-2, .container-3 {
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url("./IMG/Componentes-Hardware.jpg");
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("./IMG/Componentes-Hardware.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-animation: Movimiento 10s Infinite linear alternate;
+          animation: Movimiento 10s Infinite linear alternate;
+}
+
+.title {
+  text-align: center;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  padding: 150px;
+  color: #fff;
+  font-weight: 600;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.title:hover {
+  color: #00bbff;
+  font-weight: 900;
+}
+
+@-webkit-keyframes Movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+@keyframes Movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+.container-2 {
+  width: 100%;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url("./IMG/Mundo-tecnologico.jpg");
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("./IMG/Mundo-tecnologico.jpg");
+  -webkit-animation: Movimiento 7s infinite linear alternate;
+          animation: Movimiento 7s infinite linear alternate;
+}
+
+.container-3 {
+  width: 100%;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url("./IMG/Ciudad1.jpg");
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("./IMG/Ciudad1.jpg");
+  -webkit-animation: Movimiento 10s infinite linear alternate;
+          animation: Movimiento 10s infinite linear alternate;
+}
+
+.title2 {
+  color: white;
+  padding: 100px 0px 0px 10px;
+  font-weight: bold;
+}
+
+.text {
+  padding: 40px 10px 10px 10px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.Info-Project {
+  padding: 10px 0px 0px 30px;
+}
+
+.button {
+  border-radius: 10px;
+  color: black;
+  background: linear-gradient(45deg, red, #292729, #cdcd2e, green, black);
+  background-size: 400% 400%;
+}
+
+/*
+.container2:before {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(90deg, #52c4df, #ad55c1);
+
+  opacity: 0.8;
+  z-index: -1;
+} da una segunda capa de color transparente sobre una imagen y la hace opaca.*/
+/*# sourceMappingURL=home.component.css.map */

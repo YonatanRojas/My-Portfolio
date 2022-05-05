@@ -15,6 +15,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 const routes: Routes = [
   { path: 'sobre-mi', component: SobreMiComponent},
   { path: 'contacto', component: ContactoComponent},
@@ -41,7 +43,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    FontAwesomeModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

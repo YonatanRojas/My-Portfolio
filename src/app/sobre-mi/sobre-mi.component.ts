@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobreMiComponent implements OnInit {
 
+  fahtml5 = faHtml5;
+
   constructor() {
 
     var container = document.querySelector('.container');
@@ -14,11 +17,11 @@ export class SobreMiComponent implements OnInit {
 
     titulo.setAttribute("class", "titulo");
     const textoDelTitulo = document.createTextNode("Informacion Sobre Mi");
-
-    while(container != null){
+/*
+    while(){
       titulo.appendChild(textoDelTitulo);
       container.appendChild(titulo);
-    }
+    }*/
    }
 
   ngOnInit(): void {

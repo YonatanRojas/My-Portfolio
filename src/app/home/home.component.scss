@@ -14,10 +14,16 @@
     max-width: 100%;
     height: 400px;
 
-    background-image: url("./IMG/Componentes-Hardware.jpg");
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("./IMG/Componentes-Hardware.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     @extend  %size;
     animation: Movimiento 10s Infinite linear alternate;
+
+    
 }
+
 .title{
     text-align: center;
     text-decoration: solid;
@@ -45,7 +51,7 @@
     width: 100%;
     height: 400px;
     
-    background-image: url("./IMG/Mundo-tecnologico.jpg");
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("./IMG/Mundo-tecnologico.jpg");
     @extend %size;
     animation: Movimiento 7s infinite linear alternate;
 }
@@ -53,7 +59,7 @@
     width: 100%;
     height: 400px;
     
-    background-image: url("./IMG/Ciudad1.jpg");
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("./IMG/Ciudad1.jpg");
     @extend %size;
     animation: Movimiento 10s infinite linear alternate;
 }
@@ -66,7 +72,7 @@
 .text{
     padding: 40px 10px 10px 10px;
     text-decoration: solid;
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 20px;
     font-weight: 800;
 }
@@ -80,3 +86,16 @@
     background: linear-gradient(45deg,red,rgb(41, 39, 41),rgb(205, 205, 46),green,black);
     background-size: 400% 400%;
 }
+/*
+.container2:before {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(90deg, #52c4df, #ad55c1);
+
+  opacity: 0.8;
+  z-index: -1;
+} da una segunda capa de color transparente sobre una imagen y la hace opaca.*/ 

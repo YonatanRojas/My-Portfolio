@@ -1,6 +1,9 @@
 body{
   background-color: #151515;
 }
+.container-general{
+  height: 500px;
+}
 
 .container{
   width: 200px;
@@ -50,4 +53,9 @@ body{
   to{
     transform: rotateX(360deg) rotateY(360deg);
   }
+}
+
+//EVENTOS CON TS
+.newCaraFrontal{
+  background-color: rebeccapurple;
 }

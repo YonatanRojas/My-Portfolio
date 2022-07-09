@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faMailchimp } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -7,7 +13,11 @@ import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./sobre-mi.component.scss']
 })
 export class SobreMiComponent implements OnInit {
-
+  faPhone = faPhone;
+  faInstagram = faInstagram;
+  faGithub = faGithub;
+  faLinkedin = faLinkedinIn;
+  faMail = faMailBulk;
   fahtml5 = faHtml5;
 
   constructor() {
@@ -17,11 +27,7 @@ export class SobreMiComponent implements OnInit {
 
     titulo.setAttribute("class", "titulo");
     const textoDelTitulo = document.createTextNode("Informacion Sobre Mi");
-/*
-    while(){
-      titulo.appendChild(textoDelTitulo);
-      container.appendChild(titulo);
-    }*/
+
    }
 
   ngOnInit(): void {

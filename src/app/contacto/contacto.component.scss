@@ -1,14 +1,155 @@
 .container{
   width: 100%;
-  height: 500px;
+  height: 1200px;
   margin: 2% 8%;
-  background-color: rgb(204, 212, 212);
+  padding: 15px 0 0 7%;
+  background: linear-gradient(rgb(165, 154, 154),rgb(74, 74, 209));
   border-radius: 2%;
 }
 
 .contacto{
+  display: flex;
   width: auto;
-  background: linear-gradient(rgb(165, 154, 154),rgb(74, 74, 209));
   padding: 20px;
-  margin: 0px 30px; 
+  margin: 30px 30px;
+}
+.contactos{
+  padding: 30px 0 0 0;
+  display: flex;
+}
+.contactame{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 1s;
+}
+.contactame:hover{
+  box-shadow: 0 0 10px 6px blue;
+}
+.instagram{
+  background-image: url("../sobre-mi/IMG/instagramLOGO.jpg");
+}
+.github{
+  background-image: url("../sobre-mi/IMG/githubLOGO.png");
+}
+.linkedin{
+  background-image: url("../sobre-mi/IMG/linkedinLOGO.png")
+}
+
+nav{
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 0px 0px 15px;
+
+}
+.vinculo{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #050505;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  color:  rgb(240, 163, 20);
+  text-decoration: underline;
+}
+
+main{
+  width: 100%;
+  margin: 0 10%;
+  height: 1190px;
+  padding: 400px 0 0 0;
+}
+
+form label, form legend{
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.input{
+  display: block;
+  margin: 0px 0 20px;
+  padding: 10px 25px;
+   width: 50%;
+}
+
+form textarea{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox{
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.enviar{
+  padding: 15px 0px;
+  width: 40%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgb(238, 162, 22);
+  border: none;
+  border-radius: 5px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.enviar:hover{
+  background-color: darkorange;
+  transform: scale(1.05) /*rotate(360deg)*/;
+
+}
+
+table{
+  margin: 40px 40px;
+  border-collapse: collapse;
+}
+
+thead{
+  background-color: #555;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and(max-width: 780px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
+  }
+  input{
+    min-width: 80%;
+  }
+  textarea{
+    min-width: 80%;
+  }
+  #radio-email, #radio-telefono, #radio-whatsap{
+    min-width:auto;
+  }
+}
+@media screen and(max-width: 375px){
+  .container{
+    height: auto;
+  }
+  .contactos{
+    display:contents;
+    text-align: center;
+  }
 }

@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { FooterComponent } from './footer/footer.component';
-import { Objeto3DComponent } from './objeto3D/objeto3-d.component';
+
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
@@ -18,7 +18,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 const routes: Routes = [
   { path: 'sobre-mi', component: SobreMiComponent},
   { path: 'contacto', component: ContactoComponent},
-  { path: 'objeto3D', component: Objeto3DComponent},
+  
   { path: 'home', component: HomeComponent, pathMatch: 'full'},
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
@@ -30,7 +30,7 @@ const routes: Routes = [
     HomeComponent,
     EncabezadoComponent,
     FooterComponent,
-    Objeto3DComponent,
+    
     SobreMiComponent,
     ContactoComponent
   ],

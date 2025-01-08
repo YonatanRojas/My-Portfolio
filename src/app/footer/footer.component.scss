@@ -3,9 +3,18 @@ p{
     color: #fff;
     font-size: 20px;
 }
+%size {
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
 .footer {
-  background-color: #282c34;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../home/IMG/Ciudad1.jpg");
+  @extend %size;
+  animation: Movimiento 10s infinite linear alternate;
+
   padding: 10px 0;
+  width: 100%;
   text-align: center;
 }
 
@@ -16,8 +25,8 @@ p{
 }
 
 .footer-icon {
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   transition: transform 0.2s;
 }

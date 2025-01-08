@@ -26,17 +26,27 @@ export class HomeComponent implements OnInit {
     {
       name: 'Encriptador De Texto',
       image: '../assets/img/encriptador_texto.png',
-      link: 'https://yonatanrojas.github.io/My-portfolio/home'
+      link: 'https://yonatanrojas.github.io/Encriptador-de-texto/'
     },
     {
       name: 'Lista de Pacientes',
-      image: 'IMG/lista_pacientes.png',
-      link: 'https://github.com/tu-usuario/angular-project'
+      image: '../assets/img/lista_pacientes.png',
+      link: 'https://yonatanrojas.github.io/Listas-de-Pacientes/'
     },
     {
       name: 'Juego del Ahorcado',
-      image: 'IMG/ahorcado.png',
-      link: 'https://github.com/tu-usuario/gestion-app'
+      image: '../assets/img/juego_ahorcado.png',
+      link: 'https://yonatanrojas.github.io/Juego_del_Ahorcado/'
+    },
+    {
+      name: 'Ventas Cafe',
+      image: '../assets/img/cafe_elMejor.png',
+      link: 'https://yonatanrojas.github.io/Ventas_Cafe_El_Mejor_/'
+    },
+    {
+      name: 'Pagina de Mangas',
+      image: '../assets/img/manga_web.png',
+      link: 'https://yonatanrojas.github.io/E_manga_comerce/'
     }
   ];
 

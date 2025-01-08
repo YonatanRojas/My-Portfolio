@@ -83,7 +83,7 @@
           <div class="habilidades_blandas">
             <ul>
               <li><b>Soft Skills:</b> Comunicacion, Empatia, liderasgo, escucha y responsabilidad</li>
-              <li><b>Hobbies:</b> Ver anime, jugar videojuegos, leer variedad de libros y cuidar a mis gatos.</li>
+
             </ul>
           </div>
           <div class="academica">
@@ -92,7 +92,7 @@
               <li>
                 <b>Formacion y Cursos:</b> Fundamentos en Informatica, Principiante en programacion, Taller de ingenieria, capacitacion en Bootstrap,
                 Html:5 Completo, Css completo, Javascript completo, Programador front-end, programacion con python y Flask, Base de datos,
-                principiante en MYSQL, Programacion en Java, Businnes Agility y Formacion Emprendimiento.
+                principiante en MYSQL, Programacion en c#, Businnes Agility y Formacion Emprendimiento.
               </li>
             </ul>
           </div>
@@ -100,18 +100,12 @@
         <main class="info_contacto">
           <div class="redes_sociales">
             <h3>Contactos:</h3>
-            <div class="contacto telefono">
-              <fa-icon [icon]="faPhone"></fa-icon>
-              <a>+540 11 2553-9551</a>
-            </div>
+
             <div class="contacto gmail">
               <fa-icon [icon]="faMail"></fa-icon>
               <a href="">yonatanrojaszero@gmail.com</a>
             </div>
-            <div class="contacto instagram">
-              <fa-icon [icon]="faInstagram"></fa-icon>
-              <a href="">@yonatan6731</a>
-            </div>
+
             <div class="contacto github">
               <fa-icon [icon]="faGithub"></fa-icon>
               <a href="">https://github.com/YonatanRojas</a>
@@ -126,10 +120,11 @@
 
 
     </div>
-
+    <h2 class="title"> Proyectos</h2>
   </div>
 
   <div class="projects-container">
+    
     <div class="project-card" *ngFor="let project of projects">
       <a [href]="project.link" target="_blank" rel="noopener noreferrer">
         <img [src]="project.image" [alt]="project.name" class="project-image" />
@@ -138,34 +133,11 @@
     </div>
   </div>
 
-  <!--
-   <div class="container-4">
-     <h2 class="title2">Mis Projectos</h2>
-     <div class="Info-Project" routerLinkActive="active">
-       <button class="button" id="button6" type="button" onclick="true">
-         <a href="https://yonatanrojas.github.io/Encriptador-de-texto/">
-         <div class="proyecto_encriptador"></div>
-         Encriptador
-           </a></button>
-     </div>
-     <div class="Info-Project" routerLinkActive="active">
-       <button class="button" id="button6" type="button" onclick="true">
-         <a href="https://yonatanrojas.github.io/Juego_del_Ahorcado/">
-         <div class="proyecto_ahorcado"></div>
-         Juego del Ahoracado
-           </a></button>
-     </div>
-     <div class="Info-Project" routerLinkActive="active">
-       <button class="button" id="button7" type="button" onclick="true">
-         <a href="https://yonatanrojas.github.io/Listas-de-Pacientes/">Listas</a></button>
-     </div>
-     -->
-  <main class="container">
     <div class="contactos">
       <a href="https://www.instagram.com/yonatan6731/"><div class="contactame instagram"></div></a>
       <a href="https://github.com/YonatanRojas"><div class="contactame github"></div></a>
       <a href="https://www.linkedin.com/in/yonatan-alejandro-rojas-70571a236/"><div class="contactame linkedin"></div></a>
     </div>
-  </main>
+  
 </div>
 
